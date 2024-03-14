@@ -31,3 +31,8 @@ gcc -mavx2 -march=haswell matrixMulVector.c -o mv
 ```
 gcc -mavx2 -march=haswell matrixMulVectorThread.c -o mvt -lpthread
 ```
+# Driver Code
+```
+gcc driver.c -o d
+./c <inputFileName> <OutputFileName>
+```
