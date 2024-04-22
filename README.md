@@ -31,6 +31,10 @@ gcc -mavx2 -march=haswell matrixMulVector.c -o mv
 ```
 gcc -mavx2 -march=haswell matrixMulVectorThread.c -o mvt -lpthread
 ```
+# C with  Vector Instructions + OpenMp
+```
+gcc -mavx2 -fopenmp -march=haswell matrixMulOpenMp.c -o mmom 
+```
 # Driver Code
 ```
 gcc driver.c -o d
